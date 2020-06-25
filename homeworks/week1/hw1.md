@@ -1,6 +1,6 @@
 ## 交作業流程
 
-1. 使用`git branch status`確認正在使用`master branch` (可使用`git checkout master`切換至`master branch`)
+1. 使用`git status`確認正在使用`master branch` (可使用`git checkout master`切換至`master branch`)
 2. 使用`git pull https://github.com/Lidemy/mentor-program-4th.git master`將最新課綱內容拉下來。
 2. 使用`git push origin master`將最新課綱內容推到個人專案裡。
 3. 使用`git branch wk?`+`git checkout wk?`或是`git branch -b wk?`建立當週做作業使用的 Branch。
