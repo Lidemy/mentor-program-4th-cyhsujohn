@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新拖延運動報名表單</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        body {
+            font-family: Questrial, "Microsoft JhengHei";
+            background-color: #00000020;
+        }
+        
+        .form-area {
+            background-color: white;
+            margin: 10px;
+            box-shadow: 1.8px 2.4px 5px 0 rgba(0, 0, 0, 0.3);
+        }
+        
+        header {
+            width: 100%;
+            height: 8px;
+            background-color: #fad312;
+        }
+        
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: -1.8px;
+            color: #000000;
+            margin: 54px 0 35px 40px;
+        }
+
+        .info {
+            font-size: 14px;
+            margin: 0 40px;
+        }
+
+        .mandatory {
+            margin: 22px 0 55px 40px;
+            font-size: 16px;
+            color: #e74149;
+        }
+
+        .questions {
+            margin: 0 40px;
+        }
+
+        .q-set {
+            margin-bottom: 49px;
+        }
+
+        .question, .question-op{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .question:after {
+            content: " *";
+            color: #e74149;
+        }
+
+        .question-op .desc {
+            font-size: 14px;
+            margin-top: 12px;
+        }
+
+        .txt-answer {
+            width: 287px;
+            height: 16px;
+            border: solid 1px #d0d0d0;
+            color: #afafaf;
+            font-size: 16px;
+            padding: 3px 2px;
+        }
+
+        .txt-answer:hover {
+            cursor: text;
+        }
+
+        .clicker {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: solid 1px #d0d0d0;
+            background-color: #bababa;
+            display: inline-block;
+            margin-right: 9px;
+            margin-left: 5px;
+        }
+
+        .choice + .choice {
+            margin-top: 23px;
+        }
+
+        .button {
+            margin-left: 40px;
+            width: 92px;
+            height: 40px;
+            border-radius: 3px;
+            background-color: #fad312;
+        }
+
+        .button-txt a {
+            font-size: 15px;
+            display: block;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            padding: 13px 0;
+        }
+
+        .button + .info {
+            margin-top: 22px;
+            padding-bottom: 35px;
+        }
+
+        footer {
+            margin-top: 66px;
+            background-color: black;
+            color: #999999;
+            font-size: 13px;
+            width: auto;
+            text-align: center;
+            padding: 25px 0;
+        }
+
+        @media(max-width: 410px) {
+
+            .form-area > * {
+                margin-left: 20px;
+                margin-right: 20px;
+                text-align: center;
+            }
+            
+            .form-area > header {
+                margin: 0;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            .txt-answer {
+                width: 100%;
+                height: 16px;
+                border: solid 1px #d0d0d0;
+                color: #afafaf;
+                font-size: 16px;
+                padding: 3px 2px;
+            }
+
+            .button {
+                margin: auto;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-area">
+        <header>
+        </header>
+        <h1>
+            新拖延運動報名表單
+        </h1>
+        <div class="info">
+            <p>活動日期：2020/12/10 ~ 2020/12/11</p>
+            <p>活動地點：台北市大安區新生南路二段 1 號</p>
+        </div>
+        <div class="mandatory">
+            * 必填
+        </div>
+        <div class="questions">
+            <div class="q-set">
+                <div class="question">
+                    暱稱
+                </div>
+                <div class="txt-answer">
+                    您的回答
+                </div>
+            </div>
+            <div class="q-set">
+                <div class="question">
+                    電子郵件
+                </div>
+                <div class="txt-answer">
+                    您的電子郵件
+                </div>
+            </div>
+            <div class="q-set">
+                <div class="question">
+                    手機號碼
+                </div>
+                <div class="txt-answer">
+                    您的手機號碼
+                </div>
+            </div>
+            <div class="q-set">
+                <div class="question">
+                    報名類型
+                </div>
+                <div class="multi-choice-answer">
+                    <div class="choice">
+                        <div class="clicker">
+                        </div>
+                        躺在床上用想像力實作
+                    </div>
+                    <div class="choice">
+                        <div class="clicker">
+                        </div>
+                        趴在地上滑手機找現成的
+                    </div>
+                </div>
+            </div>
+            <div class="q-set">
+                <div class="question">
+                    怎麼知道這個活動的？
+                </div>
+                <div class="txt-answer">
+                    您的回答
+                </div>
+            </div>
+            <div class="q-set">
+                <div class="question-op">
+                    其他
+                    <div class="desc">
+                        對活動的一些建議
+                    </div>
+                </div>
+                <div class="txt-answer">
+                    您的回答
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <div class="button-txt">
+                <a href="#">提交</a>
+            </div>
+        </div>
+        <div class="info">
+            請勿透過表單送出您的密碼。
+        </div>
+    </div>
+    <footer>
+        © 2020 © Copyright. All rights Reserved.
+    </footer>
+</body>
+</html>
