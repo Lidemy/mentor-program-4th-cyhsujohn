@@ -191,12 +191,12 @@
             color: #489846;
         }
 
-        .commentWrap {
+        .comment-wrap {
             display: flex;
             margin: 54px 12px 0;
         }
 
-        .commentWrap .comments {
+        .comment-wrap .comments {
             width: 565px;
             padding: 0 22px;
             box-shadow: -1.4px -1.4px 4px 0 var(--light-blue-grey);
@@ -205,15 +205,20 @@
             font-size: 16px;
         }
 
-        .commentHead, .commentContent, .headName {
+        .comment-head img {
+            border: solid 1px #aaaaaa;
+            border-radius: 50%;
+        }
+
+        .comment-head, .comment-content, .head-name {
             transform: translate(0, -52px);
         }
         
-        .commentWrap .comments + .comments {
+        .comment-wrap .comments + .comments {
             margin-left: 16px;
         }
 
-        .commentContent {
+        .comment-content {
             margin-top: 16px;
         }
 
@@ -243,8 +248,8 @@
             }
 
             .btn-query {
-            margin-left: 0;
-            margin-top: 16px;
+                margin-left: 0;
+                margin-top: 16px;
             }
 
             .section_images {
@@ -264,20 +269,20 @@
                 margin-top: 16px;
             }
 
-            .commentWrap {
+            .comment-wrap {
                 flex-direction: column;
                 margin: 0 10px;
             }
 
-            .commentWrap .comments {
+            .comment-wrap .comments {
                 width: auto;
                 margin-top: 52px;
             }
 
-            .commentWrap .comments + .comments {
-            margin-left: 0;
-            margin-top: 105px;
-        }
+            .comment-wrap .comments + .comments {
+                margin-left: 0;
+                margin-top: 105px;
+            }
         }
 
     </style>
@@ -337,37 +342,37 @@
         <h2 class="section_title">
             吃過都說好
         </h2>
-        <div class="commentWrap">
+        <div class="comment-wrap">
             <div class="comments">
-                <div class="commentHead">
+                <div class="comment-head">
                     <img src="head1.png" width="105px">
                 </div>
-                <div class="headName">
+                <div class="head-name">
                     國父桑
                 </div>
-                <div class="commentContent">
+                <div class="comment-content">
                     我一生疲於建國，去過日本，去過歐洲，卻從未到過台北101，也從來沒有吃過這麼好吃的東西...今天在時空旅行者的幫助下我終於吃到了...此生再無遺憾 QAQ!!
                 </div>
             </div>
             <div class="comments">
-                <div class="commentHead">
+                <div class="comment-head">
                     <img src="head2.png" width="105px">
                 </div>
-                <div class="headName">
+                <div class="head-name">
                     可達鴨
                 </div>
-                <div class="commentContent">
+                <div class="comment-content">
                     三雙鞋等於30，兩個人加一雙鞋等於20，一雙冰淇淋加一雙冰淇淋加一個人等於13，那$#%$#%^%$^##$%等於多少...唉，大概咬一口就知道了!!!
                 </div>
             </div>
             <div class="comments">
-                <div class="commentHead">
+                <div class="comment-head">
                     <img src="head3.png" width="105px">
                 </div>
-                <div class="headName">
+                <div class="head-name">
                     旅かえる旅行青蛙
                 </div>
-                <div class="commentContent">
+                <div class="comment-content">
                     自從呱呱呱呱呱以後，我呱呱呱呱呱，非常感謝呱呱呱呱呱，下次呱呱呱呱呱我呱呱呱呱呱，一定呱呱呱呱呱!!!
                 </div>
             </div>
