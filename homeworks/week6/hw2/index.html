@@ -66,32 +66,21 @@
             margin-top: 12px;
         }
 
-        .txt-answer {
+        .txt-answer > input {
             width: 287px;
             height: 16px;
             border: solid 1px #d0d0d0;
-            color: #afafaf;
+            color: #000000;
             font-size: 16px;
             padding: 3px 2px;
         }
-
+        
         .txt-answer:hover {
             cursor: text;
         }
 
-        .clicker {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            border: solid 1px #d0d0d0;
-            background-color: #bababa;
-            display: inline-block;
-            margin-right: 9px;
-            margin-left: 5px;
-        }
-
         .choice + .choice {
-            margin-top: 23px;
+            margin-top: 16px;
         }
 
         .button {
@@ -145,13 +134,16 @@
                 text-align: center;
             }
 
-            .txt-answer {
+            .txt-answer input {
                 width: 100%;
                 height: 16px;
                 border: solid 1px #d0d0d0;
-                color: #afafaf;
                 font-size: 16px;
                 padding: 3px 2px;
+            }
+
+            ::placeholder {
+                text-align: center;
             }
 
             .button {
@@ -182,7 +174,7 @@
                     暱稱
                 </div>
                 <div class="txt-answer">
-                    您的回答
+                    <input name="nickname" type="text" placeholder="您的回答">
                 </div>
             </div>
             <div class="q-set">
@@ -190,7 +182,7 @@
                     電子郵件
                 </div>
                 <div class="txt-answer">
-                    您的電子郵件
+                    <input name="email" type="text" placeholder="您的電子郵件">
                 </div>
             </div>
             <div class="q-set">
@@ -198,7 +190,7 @@
                     手機號碼
                 </div>
                 <div class="txt-answer">
-                    您的手機號碼
+                    <input name="phone-number" type="text" placeholder="您的手機號碼">
                 </div>
             </div>
             <div class="q-set">
@@ -207,14 +199,16 @@
                 </div>
                 <div class="multi-choice-answer">
                     <div class="choice">
-                        <div class="clicker">
-                        </div>
-                        躺在床上用想像力實作
+                        <input type="radio" name="type" id="imagine">
+                        <label for="imagine">
+                            躺在床上用想像力實作
+                        </label>
                     </div>
                     <div class="choice">
-                        <div class="clicker">
-                        </div>
-                        趴在地上滑手機找現成的
+                        <input class="choice" type="radio" name="type" id="with-phone">
+                        <label for="with-phone">
+                            趴在地上滑手機找現成的
+                        </label>
                     </div>
                 </div>
             </div>
@@ -223,7 +217,7 @@
                     怎麼知道這個活動的？
                 </div>
                 <div class="txt-answer">
-                    您的回答
+                    <input name="how-to-know" type="text" placeholder="您的回答">
                 </div>
             </div>
             <div class="q-set">
@@ -234,7 +228,7 @@
                     </div>
                 </div>
                 <div class="txt-answer">
-                    您的回答
+                    <input name="other" type="text" placeholder="您的回答">
                 </div>
             </div>
         </div>
